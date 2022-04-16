@@ -1,7 +1,25 @@
 <html>
 <head>
   <title> Airport Buddy Bot Test Page </title>
-  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  </head>
+<body>
+  <style>
+    div.chat-wrapper[opened="true"]
+    {
+    height:80%;
+    }
+    
+    df-messenger {
+   --df-messenger-bot-message: #878fac;
+   --df-messenger-button-titlebar-color: #df9b56;
+   --df-messenger-chat-background-color: #fafafa;
+   --df-messenger-font-color: white;
+   --df-messenger-send-icon: #878fac;
+   --df-messenger-user-message: #479b3d;
+  }
+  </style>
+<p>Aiport Buddy Bot. Start Chatting Now!</p>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 <df-messenger
   chat-icon="https:&#x2F;&#x2F;storage.googleapis.com&#x2F;cloudprod-apiai&#x2F;ea0d2a79-178f-4ce5-91f9-34b629ee24e8_x.png"
   intent="WELCOME"
@@ -9,8 +27,5 @@
   agent-id="88ea84b4-ab98-4248-a123-8b9efb935ae1"
   language-code="en"
 ></df-messenger>
-  </head>
-<body>
-<p>Aiport Buddy Bot. Start Chatting Now!</p>
-</body>
+  </body>
 </html>
